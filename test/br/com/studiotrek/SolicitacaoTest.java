@@ -14,7 +14,7 @@ public class SolicitacaoTest {
 	@Test
 	public void testVerificarSolicitacao() {
 		try {
-			Solicitacao solicitacao = new Solicitacao("Rua das Orquidias", 55.0);
+			Solicitacao solicitacao = new Solicitacao("Rua das Orquidias", 15.0);
 			solicitacao.verificarSolicitacao();
 		} catch (Exception e) {
 			Assert.fail(e.getMessage());
