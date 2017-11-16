@@ -51,7 +51,7 @@ public class Carro {
 			if (i % 2 == 0) {
 				carro.setOcupacao(true);
 			} else {
-				carro.setOcupacao(false);
+				carro.setOcupacao(true);
 			}
 
 			carros.add(carro);
