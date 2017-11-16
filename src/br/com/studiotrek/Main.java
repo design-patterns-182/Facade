@@ -3,14 +3,11 @@ package br.com.studiotrek;
 public class Main {
 
 	public static void main(String[] args) {
+		Solicitacao solicitacao = new Solicitacao("Rua das Amoras", 12.45);
+		Garagem garagem = new Garagem();
 		
-		Estoque estoque = new Estoque();
-		Financeiro financeiro = new Financeiro();
-		PosVenda posVenda = new PosVenda();
-		
-		PedidoFacade pedidoFacade = new PedidoFacade(estoque, financeiro, posVenda);
-		Pedido pedido = new Pedido("Notebook", "Manuel Alves", "Rua das Pitangas, 111, São Paulo, SP");
-		pedidoFacade.registrarPedido(pedido);
+		ClienteFacade clienteFacade = new ClienteFacade(solicitacao, garagem);
+		clienteFacade.RealizarSolicitacao(new Cliente("Alfredo"));
 	}
-	
+
 }
